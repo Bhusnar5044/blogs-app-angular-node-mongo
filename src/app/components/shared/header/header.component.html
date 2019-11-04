@@ -1,0 +1,22 @@
+<nav class="navbar navbar-light bg-light navbar-expand-lg">
+    <a class="navbar-brand" >Bloggers</a>
+    <button class="navbar-toggler" type="button" (click)="isNavbarCollapsed = !isNavbarCollapsed">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" [ngbCollapse]="isNavbarCollapsed">
+        <ul class="navbar-nav ml-auto" *ngIf="!isLoggedIn">
+            <li class="nav-item dropdown" ngbDropdown>
+                <a class="nav-link dropdown-toggle" ngbDropdownToggle>
+                    <em class="fa fa-user-circle fa-2x"></em>
+                </a>
+                <div class="dropdown-menu dropdown-menu-right" ngbDropdownMenu>
+                    <a ngbDropdownItem class="dropdown-item text-center" *ngFor="let navItem of beforeLogin" routerLink={{navItem.routerLink}} routerLinkActive="active">
+                        {{ navItem.navTitle }}
+                        <em class="fa" [ngClass]="navItem.icon"></em>
+                    </a>
+                </div>
+            </li>
+        </ul>   
+    </div>
+</nav>

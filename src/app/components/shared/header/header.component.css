@@ -1,0 +1,11 @@
+.nav-item {
+    cursor: pointer;
+}
+
+.dropdown-toggle::after {
+    content: none !important;
+}
+
+.navbar-brand {
+    cursor: pointer;
+}

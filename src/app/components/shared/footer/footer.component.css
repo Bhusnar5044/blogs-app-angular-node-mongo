@@ -1,0 +1,13 @@
+.page-footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding-top: 1.5vh;
+    padding-bottom: 1.5vh; 
+}
+
+.footer-text {
+    font-size: 1.8vh;
+    font-weight: lighter;
+    text-align: center;
+}

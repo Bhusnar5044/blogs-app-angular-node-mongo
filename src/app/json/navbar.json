@@ -1,0 +1,12 @@
+{
+    "beforeLogin": [
+        { "title": "Login", "url": "auth/login", "icon": "fa fa-sign-in" },
+        { "title": "Signup", "url": "auth/signup", "icon": "fa-user-plus" }
+    ],
+    "afterLogin": [
+        { "title": "Dashbaord", "url": "dashboard", "icon": "fa-home" },
+        { "title": "New Post", "url": "dashboard", "icon": "fa-add" },
+        { "title": "Profile", "url": "dashboard", "icon": "fa-user" },
+        { "title": "Logout", "url": "dashboard", "icon": "fa-sign-out" }
+    ]
+}

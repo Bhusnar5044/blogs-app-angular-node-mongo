@@ -1,0 +1,4 @@
+{
+    "connectionString": "mongodb+srv://shikalgar32:Sahil123@cluster0-ijz3f.gcp.mongodb.net/test?retryWrites=true&w=majority",
+    "SECRET": "BLOGGERS-APP"
+}

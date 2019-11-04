@@ -1,0 +1,90 @@
+<div class="row" #signupComponent>
+        <div class="col-md-4 mx-auto mt-5">
+            <div class="card card-body">
+                <form [formGroup]="signupForm" (ngSubmit)="signupHandler()">
+                    <h4 class="text-center mb-5">Sign up to continue</h4>
+                    <div class="form-group mb-3">
+                        <div class="input-group">	
+                            <div class="input-group-append">
+                                <span class="input-group-text bg-light">
+                                    <em class="fa fa-user-circle"></em>
+                                </span>
+                            </div>
+                            <input type="text" class="form-control" formControlName="first_name" placeholder="First Name">
+                        </div>
+                    </div>
+                    <div class="form-group mb-3">
+                        <div class="input-group">	
+                            <div class="input-group-append">
+                                <span class="input-group-text bg-light">
+                                    <em class="fa fa-user-circle"></em>
+                                </span>
+                            </div>
+                            <input type="text" class="form-control" formControlName="last_name" placeholder="Last Name">
+                        </div>
+                    </div>
+                    <div class="form-group mb-3">
+                        <div class="input-group">	
+                            <div class="input-group-append">
+                                <span class="input-group-text bg-light">
+                                    <em class="fa fa-user-secret"></em>
+                                </span>
+                            </div>
+                            <select class="form-control" formControlName="gender">
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group mb-3">
+                        <div class="input-group">	
+                            <div class="input-group-append">
+                                <span class="input-group-text bg-light">
+                                    <em class="fa fa-birthday-cake"></em>
+                                </span>
+                            </div>
+                            <input type="date" class="form-control" formControlName="dob" max={{date}}>
+                        </div>
+                    </div>
+                    <div class="form-group mb-3">
+                        <div class="input-group">	
+                            <div class="input-group-append">
+                                <span class="input-group-text bg-light">
+                                    <em class="fa fa-envelope"></em>
+                                </span>
+                            </div>
+                            <input type="text" class="form-control" formControlName="email" placeholder="Email">
+                        </div>
+                    </div>
+                    <div class="form-group mb-3">
+                        <div class="input-group">	
+                            <div class="input-group-append">
+                                <span class="input-group-text bg-light">
+                                    <em class="fa fa-key"></em>
+                                </span>
+                            </div>
+                            <input type="password" class="form-control" formControlName="password" placeholder="Password">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <button type="submit" class="btn btn-primary form-control">Sign Up</button>
+                        </div>
+                        <div class="col">
+                            <button type="button" class="btn btn-danger form-control">Reset</button>
+                        </div>
+                    </div>
+                    <div class="row mt-5 text-center">
+                        <div class="col">
+                            <small class="sign_up_text">Already have a account? <a routerLink="/auth/login">Login</a></small>
+                        </div>
+                    </div>
+                    <div class="row mt-1 text-center">
+                        <div class="col">
+                            <small class="sign_up_text">Forget password? <a href="">Reset</a></small>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
